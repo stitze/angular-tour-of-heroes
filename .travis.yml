@@ -11,3 +11,8 @@ before_script:
   - npm install -g @angular/cli
 script:
   - ng test --watch false --browsers ChromeHeadless
+deploy:
+skip_cleanup: true
+provider: firebase
+token:
+  secure: "1//03OJSjwqrdWhqCgYIARAAGAMSNwF-L9IrCvcSMI1jsJW9OBfFLjuvGSS09aRdFobvSvIWYMWYIbrPnFQGTQFrGqzcRng537ASRo0"
