@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - "12.16"
+- '12.16'
 branches:
   only:
   - master
@@ -8,11 +8,12 @@ addons:
   apt:
     chrome: stable
 before_script:
-  - npm install -g @angular/cli
+- npm install -g @angular/cli
 script:
-  - ng test --watch false --browsers ChromeHeadless
+- ng test --watch false --browsers ChromeHeadless
 deploy:
-skip_cleanup: true
-provider: firebase
-token:
-  secure: "1//03OJSjwqrdWhqCgYIARAAGAMSNwF-L9IrCvcSMI1jsJW9OBfFLjuvGSS09aRdFobvSvIWYMWYIbrPnFQGTQFrGqzcRng537ASRo0"
+  skip_cleanup: true
+  provider: firebase
+  token:
+    secure: Rz2x2ZUh07LgzTEfm97G0edvNoGAR84NnH5/CF47u6NEOTVuWcqVYF+qjl7xud7Wn/jMVzQt89TpB1vBGIrC57YvEloHNOlSbwkhVqVLDOviXJPrLW3YPUgSzJqUgDtpxZPBIDJDFwkWN/+sqFiDte4yShs8z7Hat5u/WBciv6ax5+DbCig5QZr0itpCdUlbldg8+InTsO0UM+C3ycWGvbMZrd3Fi3VUoe3n3bd73XShpyxqmbBzT8CCzZYlulihZASbPB25SmmUY/q6oPAR9ZAFOqx5xdpSApBoqT3bmfTF6hZCZYQu8tN27szOKSrJ3r4a7/Nw0KL6Cr3VujMzJpKc8DFpWygbtQWk2VZWkQHIy9vm2D2nquTfJippnQHt/kJ3xFOhSgS/3IorWvw4rw4zatnBIMUGeuBNQx4t37RIAWAoBlXj4E8yK7C6RexPXtL8ceeb/5poHvf1FQht4gZMst0+SmFPDOl2hKBfJ0fRUfH7jXPLm9fPMO4PQkOd3ujJTsIYGYxoJ4HklX0cH7yBMi6roEhAtUyq9qVvPpq319uY2r1CbP+F6526eJ3c9S1RmqjBSyhK9PJ8M/oXQ9vJDaz3GR71wFwET0bUOb9So+hnYw5g8L+BBSPXVPIc0B719JM4XMJ1gYbB6TrFbW3wDbN7o5/bfpBWHEou3KU=
+
