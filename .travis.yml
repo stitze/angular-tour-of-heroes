@@ -4,8 +4,15 @@ node_js:
 branches:
   only:
   - master
+addons:
+  apt:
+    sources:
+      - google-chrome
+    packages:
+      - google-chrome-stable
 before_script:
   - npm install -g @angular/cli
 script:
   - npm install
   - npm run build
+  - npm run test -- --no-watch --no-progress --browsers=ChromeHeadlessCI
